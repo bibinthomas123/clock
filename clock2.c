@@ -6,7 +6,7 @@
 int choice;
 
 VOID WINAPI Sleep( //sleep function
-    _In_ DWORD dwMilliseconds);
+    _In_ DWORD dwMilliseconds);    
 
 int currenttime() //function that print the current time
 {
@@ -27,7 +27,7 @@ int currenttime() //function that print the current time
              timeinfo);
     puts(buffer);
 
-    return 0;
+    return timeinfo;
 }
 
 int setTime()
@@ -64,12 +64,18 @@ int setTime()
         }
         printf("%02d:%02d:%02d", hour, min, sec);
         Sleep(d); // waits for 1000 milli seconds
-        system("cls");
+        system("cls"); //clears the screen
     }
 }
 
 void sound()
 {
+
+
+      int i;
+      for(i=0;;i++){ 
+	   Beep(2000, 300);}
+	   return 0;
     //     int time;
     //     time = 1*120;
     //   Beep(500,time);
@@ -78,109 +84,109 @@ void sound()
     //    Beep(1000, 300);}
     //    return 0;
 
-    int x;
+    // int x;
 
     // Loop for sound Jingle
-    for (x = 0; x < 2; x++)
-    {
-        Beep(523, 500);
-    }
+    // for (x = 0; x < 2; x++)
+    // {
+    //     Beep(523, 500); //produces beep (frequency ,time in ms )
+    // }
 
-    // sound Bell
-    Beep(523, 800);
+    // // sound Bell
+    // Beep(523, 800);
 
-    Sleep(200);
+    // Sleep(200);
 
-    // Loop for sound Jingle
-    for (x = 0; x < 2; x++)
-    {
-        Beep(523, 500);
-    }
+    // // Loop for sound Jingle
+    // for (x = 0; x < 2; x++)
+    // {
+    //     Beep(523, 500);
+    // }
 
-    // sound Bell
-    Beep(523, 800);
+    // // sound Bell
+    // Beep(523, 800);
 
-    // Sound for rest of the tone
-    Sleep(200);
+    // // Sound for rest of the tone
+    // Sleep(200);
 
-    Beep(523, 500);
+    // Beep(523, 500);
 
-    Sleep(50);
+    // Sleep(50);
 
-    Beep(659, 400);
+    // Beep(659, 400);
 
-    Sleep(50);
+    // Sleep(50);
 
-    Beep(440, 400);
+    // Beep(440, 400);
 
-    Sleep(50);
+    // Sleep(50);
 
-    Beep(494, 400);
+    // Beep(494, 400);
 
-    Sleep(50);
+    // Sleep(50);
 
-    Beep(523, 750);
+    // Beep(523, 750);
 
-    Sleep(400);
+    // Sleep(400);
 
-    Beep(600, 400);
+    // Beep(600, 400);
 
-    Sleep(100);
+    // Sleep(100);
 
-    Beep(600, 350);
+    // Beep(600, 350);
 
-    Sleep(200);
+    // Sleep(200);
 
-    Beep(600, 300);
+    // Beep(600, 300);
 
-    Sleep(150);
+    // Sleep(150);
 
-    Beep(600, 250);
+    // Beep(600, 250);
 
-    Sleep(150);
+    // Sleep(150);
 
-    Beep(600, 150);
+    // Beep(600, 150);
 
-    Sleep(150);
+    // Sleep(150);
 
-    Beep(550, 250);
+    // Beep(550, 250);
 
-    Sleep(150);
+    // Sleep(150);
 
-    Beep(555, 350);
+    // Beep(555, 350);
 
-    Sleep(50);
+    // Sleep(50);
 
-    Beep(555, 200);
-    Sleep(150);
+    // Beep(555, 200);
+    // Sleep(150);
 
-    Beep(555, 200);
+    // Beep(555, 200);
 
-    Sleep(150);
+    // Sleep(150);
 
-    Beep(690, 200);
+    // Beep(690, 200);
 
-    Sleep(150);
+    // Sleep(150);
 
-    Beep(690, 200);
+    // Beep(690, 200);
 
-    Sleep(150);
+    // Sleep(150);
 
-    Beep(610, 200);
+    // Beep(610, 200);
 
-    Sleep(150);
+    // Sleep(150);
 
-    Beep(535, 160);
+    // Beep(535, 160);
 
-    Sleep(100);
+    // Sleep(100);
 
-    Beep(500, 150);
+    // Beep(500, 150);
 
-    Beep(500, 50);
+    // Beep(500, 50);
 
-    Sleep(200);
+    // Sleep(200);
 
-    Beep(700, 200);
+    // Beep(700, 200);
 }
 
 int minutes()
